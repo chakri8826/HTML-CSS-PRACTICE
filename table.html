@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table: Border, Cellpadding, and Cellspacing</title>
+    <style>
+        /* Modern CSS styling for the table */
+        .modern-table {
+            border-collapse: separate; /* Keeps borders separate */
+            border-spacing: 4px;       /* Equivalent to cellspacing="4" */
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        .modern-table td {
+            padding: 20px;            /* Equivalent to cellpadding="20" */
+            border: 2px solid black;  /* Equivalent to border="2" */
+        }
+
+        .modern-table caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Attributes in HTML</h1>
+
+    <!-- Table using deprecated attributes -->
+    <h2>Table Using Deprecated Attributes</h2>
+    <table border="6" cellpadding="10" cellspacing="10">
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+    </table>
+
+    <!-- Table using modern CSS -->
+    <h2>Table Using Modern CSS</h2>
+    <table border="2" cellpadding="10" cellspacing="10">
+        <caption>Styled Using CSS</caption>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+    </table>
+</body>
+</html>
